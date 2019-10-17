@@ -1,1 +1,1 @@
-# 2019-10-16-java-enum
+Exemplo de uso de enum no java.
