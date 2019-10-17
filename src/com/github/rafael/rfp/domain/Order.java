@@ -1,5 +1,6 @@
 package com.github.rafael.rfp.domain;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Order {
@@ -24,5 +25,16 @@ public class Order {
 
     public Double getValue() {
         return value;
+    }
+
+    private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
+    @Override
+    public String toString() {
+        return  "{" +
+                "\"requester\":\"" + requester + "\"" +
+                ", \"dueDate\":\"" + sdf.format(dueDate) + "\"" +
+                ", \"value\":" + value +
+                "}";
     }
 }

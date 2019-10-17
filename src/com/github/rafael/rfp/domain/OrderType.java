@@ -12,8 +12,6 @@ public enum OrderType {
     PAYMENT ( "Pagamento", new Payment()),
     TAX ("Impostos", new Tax());
 
-
-
     private final String description;
     private final InterfaceOrderData interfaceOrderData;
 
